@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://gwl6318wv2a"]
+[gd_scene load_steps=33 format=3 uid="uid://gwl6318wv2a"]
 
 [ext_resource type="Texture2D" uid="uid://csbhouxv3bn10" path="res://Slimes/SlimeGreen/SlimeBasic_00000.png" id="1_ncgp5"]
 [ext_resource type="Texture2D" uid="uid://natcrieq3wlf" path="res://Slimes/SlimeGreen/SlimeBasic_00001.png" id="2_7jtxw"]
@@ -129,9 +129,17 @@ animations = [{
 "speed": 25.0
 }]
 
-[node name="Slime" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ncgp5"]
+size = Vector2(214, 154)
+
+[node name="Green Slime" type="RigidBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(3, 2)
 sprite_frames = SubResource("SpriteFrames_kd6jp")
-frame_progress = 0.903092
+frame = 20
+frame_progress = 0.361411
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, 11)
+shape = SubResource("RectangleShape2D_ncgp5")
