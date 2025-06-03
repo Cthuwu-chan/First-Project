@@ -1,0 +1,71 @@
+[gd_scene load_steps=8 format=4 uid="uid://cq4hp4bxfxlt1"]
+
+[ext_resource type="PackedScene" uid="uid://dsmqbhmku1ih7" path="res://Scenes/player.tscn" id="1_8gbba"]
+[ext_resource type="Script" uid="uid://c4qmsbbhi5yf8" path="res://Scenes/player.gd" id="2_8gbba"]
+[ext_resource type="PackedScene" uid="uid://wv883sg7u4xn" path="res://Scenes/tile_map_layer.tscn" id="3_kry3j"]
+[ext_resource type="PackedScene" uid="uid://besqgf50y4xc6" path="res://Scenes/platform.tscn" id="4_jjvhh"]
+
+[sub_resource type="Animation" id="Animation_jjvhh"]
+resource_name = "Move"
+length = 2.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.25, 2.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(390, -69), Vector2(582, -69)]
+}
+
+[sub_resource type="Animation" id="Animation_kry3j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(390, -69)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_21xkr"]
+_data = {
+&"Move": SubResource("Animation_jjvhh"),
+&"RESET": SubResource("Animation_kry3j")
+}
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_8gbba")]
+position = Vector2(-7, -7)
+script = ExtResource("2_8gbba")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, 1)
+zoom = Vector2(4, 4)
+position_smoothing_enabled = true
+
+[node name="TileMapLayer" parent="." instance=ExtResource("3_kry3j")]
+position = Vector2(-2, 6)
+tile_map_data = PackedByteArray("AAD//wAAAAAAAAEAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAP//AAAAAAEAAAACAP7/AAAAAAEAAAADAP7/AAAAAAEAAAAEAP7/AAAAAAEAAAACAP//AAAAAAEAAAACAAAAAAAAAAEAAAADAP//AAAAAAEAAAADAAAAAAAAAAEAAAAEAAAAAAAAAAEAAAAEAP//AAAAAAEAAAAFAAAAAAAAAAEAAAAGAAAAAAAAAAEAAAAHAAAAAAAAAAEAAAAIAAAAAAAAAAcAAAAJAAAAAAABAAcAAAAKAAAAAAACAAcAAAALAAAAAAAAAAEAAAAMAAAAAAAAAAEAAAAGAPv/AAAAAAEAAAAHAPv/AAAAAAEAAAAHAPr/AAAAAAEAAAAGAPr/AAAAAAEAAAAIAPn/AAAAAAEAAAAJAPn/AAAAAAEAAAAJAPr/AAAAAAEAAAAIAPr/AAAAAAEAAAAIAPv/AAAAAAEAAAAJAPv/AAAAAAEAAAAKAPv/AAAAAAEAAAALAPv/AAAAAAEAAAAMAPv/AAAAAAcAAAANAPv/AAABAAcAAAAOAPv/AAACAAcAAAAPAPv/AAAAAAEAAAAQAPv/AAAAAAEAAAAQAPr/AAAAAAEAAAARAPr/AAAAAAEAAAARAPv/AAAAAAEAAAASAPv/AAAAAAEAAAAPAPz/AAAAAAEAAAAQAPz/AAAAAAEAAAARAPz/AAAAAAEAAAASAPz/AAAAAAEAAAAPAAAAAAAAAAEAAAAQAAAAAAAAAAEAAAAQAAEAAAAAAAEAAAAPAAEAAAAAAAEAAAAMAAEAAAAAAAEAAAALAAEAAAAAAAEAAAAHAAEAAAAAAAEAAAAGAAEAAAAAAAEAAAAFAAEAAAAAAAEAAAAEAAEAAAAAAAEAAAADAAEAAAAAAAEAAAACAAEAAAAAAAEAAAABAAEAAAAAAAEAAAAAAAEAAAAAAAEAAAD//wEAAAAAAAEAAAAVAPv/AAAAAAEAAAAWAPv/AAAAAAEAAAAVAPz/AAAAAAEAAAAWAPz/AAAAAAEAAAAFAP//AAAAAAEAAAAmAPz/AAAAAAEAAAAnAPz/AAAAAAEAAAAmAP3/AAAAAAEAAAAnAP3/AAAAAAEAAAAAAP7/AAACAAQAAAALAPr/AAAEAAgAAAALAPn/AAADAAcAAAALAPf/AAACAAQAAAAQAP//AAABAAYAAAALAP//AAABAAQAAAAHAPf/AAAAAAMAAAAHAPj/AAAAAAQAAAAHAPn/AAAAAAUAAAAWAPr/AAAJAAMAAAASAPr/AAAKAAMAAAA=")
+
+[node name="Platform" parent="." instance=ExtResource("4_jjvhh")]
+position = Vector2(62, -59)
+
+[node name="Platform2" parent="." instance=ExtResource("4_jjvhh")]
+position = Vector2(390, -69)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platform2"]
+libraries = {
+&"": SubResource("AnimationLibrary_21xkr")
+}
+autoplay = "Move"

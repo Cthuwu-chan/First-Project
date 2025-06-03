@@ -1,0 +1,141 @@
+[gd_scene load_steps=33 format=3 uid="uid://bvace7hvs7b5g"]
+
+[ext_resource type="Texture2D" uid="uid://dcpk562pf72i3" path="res://Slimes/SlimeOrange/SlimeOrange_00000.png" id="1_h1sss"]
+[ext_resource type="Texture2D" uid="uid://ej7q72t2u378" path="res://Slimes/SlimeOrange/SlimeOrange_00001.png" id="2_le5os"]
+[ext_resource type="Texture2D" uid="uid://ccf4x7q62j1yf" path="res://Slimes/SlimeOrange/SlimeOrange_00002.png" id="3_rrkjv"]
+[ext_resource type="Texture2D" uid="uid://bmtn7bcsoqau1" path="res://Slimes/SlimeOrange/SlimeOrange_00003.png" id="4_vvviu"]
+[ext_resource type="Texture2D" uid="uid://bplasgixt04ju" path="res://Slimes/SlimeOrange/SlimeOrange_00004.png" id="5_sm3fd"]
+[ext_resource type="Texture2D" uid="uid://cwf5iwb3034ki" path="res://Slimes/SlimeOrange/SlimeOrange_00005.png" id="6_iuibw"]
+[ext_resource type="Texture2D" uid="uid://cbmkusdn58moi" path="res://Slimes/SlimeOrange/SlimeOrange_00006.png" id="7_e0sjv"]
+[ext_resource type="Texture2D" uid="uid://c6hjw6j5i20wv" path="res://Slimes/SlimeOrange/SlimeOrange_00007.png" id="8_81ryj"]
+[ext_resource type="Texture2D" uid="uid://b8idfu1j5ykgh" path="res://Slimes/SlimeOrange/SlimeOrange_00008.png" id="9_gfgf8"]
+[ext_resource type="Texture2D" uid="uid://bgpalpoojkhhl" path="res://Slimes/SlimeOrange/SlimeOrange_00009.png" id="10_bcuwd"]
+[ext_resource type="Texture2D" uid="uid://0kj8xsgv5cvs" path="res://Slimes/SlimeOrange/SlimeOrange_00010.png" id="11_e1f8l"]
+[ext_resource type="Texture2D" uid="uid://dhfbv56qlch87" path="res://Slimes/SlimeOrange/SlimeOrange_00011.png" id="12_yptbw"]
+[ext_resource type="Texture2D" uid="uid://cyyy76rd4riea" path="res://Slimes/SlimeOrange/SlimeOrange_00012.png" id="13_vv3jm"]
+[ext_resource type="Texture2D" uid="uid://42t5kb120env" path="res://Slimes/SlimeOrange/SlimeOrange_00013.png" id="14_dstt0"]
+[ext_resource type="Texture2D" uid="uid://bvd7eb84wsuef" path="res://Slimes/SlimeOrange/SlimeOrange_00014.png" id="15_uj6sc"]
+[ext_resource type="Texture2D" uid="uid://n2nfwcec4sws" path="res://Slimes/SlimeOrange/SlimeOrange_00015.png" id="16_e3w6c"]
+[ext_resource type="Texture2D" uid="uid://rco2w23w7qdq" path="res://Slimes/SlimeOrange/SlimeOrange_00016.png" id="17_wbk2k"]
+[ext_resource type="Texture2D" uid="uid://d358gq5kyjvbq" path="res://Slimes/SlimeOrange/SlimeOrange_00017.png" id="18_qof6t"]
+[ext_resource type="Texture2D" uid="uid://b8cpip68kyrtr" path="res://Slimes/SlimeOrange/SlimeOrange_00018.png" id="19_nsxp7"]
+[ext_resource type="Texture2D" uid="uid://jspsmdnidvtx" path="res://Slimes/SlimeOrange/SlimeOrange_00019.png" id="20_kvi0i"]
+[ext_resource type="Texture2D" uid="uid://b8i2xbb7eesum" path="res://Slimes/SlimeOrange/SlimeOrange_00020.png" id="21_l0uxu"]
+[ext_resource type="Texture2D" uid="uid://22faxs7p03gc" path="res://Slimes/SlimeOrange/SlimeOrange_00021.png" id="22_1mwwa"]
+[ext_resource type="Texture2D" uid="uid://qqknjc24yuwr" path="res://Slimes/SlimeOrange/SlimeOrange_00022.png" id="23_2fibv"]
+[ext_resource type="Texture2D" uid="uid://baykmw5neiunm" path="res://Slimes/SlimeOrange/SlimeOrange_00023.png" id="24_w0p0s"]
+[ext_resource type="Texture2D" uid="uid://gmqcdy4futnk" path="res://Slimes/SlimeOrange/SlimeOrange_00024.png" id="25_dab32"]
+[ext_resource type="Texture2D" uid="uid://ducwxj1hk3nlk" path="res://Slimes/SlimeOrange/SlimeOrange_00025.png" id="26_54pn1"]
+[ext_resource type="Texture2D" uid="uid://daq6a0eq6rwlu" path="res://Slimes/SlimeOrange/SlimeOrange_00026.png" id="27_c8tf3"]
+[ext_resource type="Texture2D" uid="uid://eewn0rgun08o" path="res://Slimes/SlimeOrange/SlimeOrange_00027.png" id="28_0gxgl"]
+[ext_resource type="Texture2D" uid="uid://n7kkj46fryh0" path="res://Slimes/SlimeOrange/SlimeOrange_00028.png" id="29_7hfte"]
+[ext_resource type="Texture2D" uid="uid://5kee5khq2vpd" path="res://Slimes/SlimeOrange/SlimeOrange_00029.png" id="30_8dxq6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p6jvj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_h1sss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_le5os")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rrkjv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vvviu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sm3fd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iuibw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_e0sjv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_81ryj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_gfgf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bcuwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_e1f8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_yptbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vv3jm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dstt0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_uj6sc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_e3w6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wbk2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qof6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_nsxp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kvi0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_l0uxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_1mwwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2fibv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_w0p0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_dab32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_54pn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_c8tf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_0gxgl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7hfte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_8dxq6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g83qr"]
+size = Vector2(454, 295)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_p6jvj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_g83qr")
